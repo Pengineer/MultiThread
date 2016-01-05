@@ -1,4 +1,4 @@
-package hust.thread.Synchronized;
+package hust.thread.Synchronized.method;
 
 /**
  * 非线程安全问题会在多个线程对同一个对象中的实例变量进行并发访问时发生。方法中的局部变量不会发生线程安全问题。

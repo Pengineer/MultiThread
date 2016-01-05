@@ -1,4 +1,4 @@
-package hust.thread.Synchronized;
+package hust.thread.Synchronized.method;
 
 /**
  * 调用被锁对象的异步方法

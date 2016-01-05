@@ -1,4 +1,4 @@
-package hust.thread.Synchronized;
+package hust.thread.Synchronized.method;
 
 /**
  * 多个对象多个锁
