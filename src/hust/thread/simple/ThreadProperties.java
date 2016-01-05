@@ -10,7 +10,7 @@ public class ThreadProperties {
 
 	public static void main(String[] args) {
 		System.out.println("1: " + Thread.activeCount());
-		System.out.println("2: " + Thread.currentThread().getId());
+		System.out.println("2: " + Thread.currentThread().getId()); // 获取线程的唯一标识
 		System.out.println("3: " + Thread.currentThread().getName());
 		System.out.println("4: " + Thread.currentThread().getPriority());
 		System.out.println("5: " + Thread.currentThread().getContextClassLoader());
@@ -19,7 +19,7 @@ public class ThreadProperties {
 		System.out.println("8: " + Thread.currentThread().getThreadGroup());
 		System.out.println("9: " + Thread.currentThread().getUncaughtExceptionHandler());
 
-		System.out.println("10: " + Thread.currentThread().isAlive());
+		System.out.println("10: " + Thread.currentThread().isAlive());// 线程已启动并尚未终止（使用此处方式调用始终返回true）
 		System.out.println("11: " + Thread.currentThread().isDaemon());
 		System.out.println("12: " + Thread.currentThread().isInterrupted());
 		

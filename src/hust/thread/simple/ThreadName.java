@@ -16,7 +16,7 @@ public class ThreadName {
 			super.run();
 			this.setName("A"); //设置thread的名字
 			System.out.println(this.getName());
-			System.out.println(Thread.currentThread().getName()); //调用本Thread的run方法的Thread名字。
+			System.out.println(Thread.currentThread().getName()); //调用本Thread的run方法的Thread名字。 
 		}
 	}
 }
