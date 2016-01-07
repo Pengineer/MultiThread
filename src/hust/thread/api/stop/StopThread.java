@@ -117,7 +117,7 @@ public class StopThread {
 		public void run() {
 			try{
 				for(int i=0; i < 1000000; i++) {
-					if(interrupted()) {//interrupted()会将中断标志位清为false，isInterrupted()不会清标志位
+					if(interrupted()) {//interrupted()会将中断标志位清为false，isInterrupted()不会清标志位（当然了，if里面的条件也可以是任意的）
 						System.out.println("线程已中断，退出！");
 						throw new InterruptedException();
 					}
