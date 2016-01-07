@@ -10,7 +10,7 @@ package hust.thread.Synchronized.block;
  * 同步代码块：synchronized(this) 或则 synchronized(非this对象)
  * 其中，非this对象一般是实例对象或则方法参数。
  * 
- * 线程是否发生阻塞只需要看它们所持有的锁是否来自同一个对象。
+ * 线程是否发生阻塞只需要看它们所持有的锁是否来自同一个对象，与对象的属性是否发生变化无关。
  * 
  * @author 2016-01-06
  *

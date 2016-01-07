@@ -1,4 +1,4 @@
-package hust.thread.yield;
+package hust.thread.api.yield;
 
 /**
  * yield()方法作用：临时放弃当前CPU执行权，但放弃的时间不确定，也可能刚刚放弃，马上又获得CPU执行权。

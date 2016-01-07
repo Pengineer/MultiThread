@@ -1,4 +1,4 @@
-package hust.thread.stop;
+package hust.thread.api.stop;
 
 /**
  * Java中停止一个线程的方法：

@@ -1,4 +1,4 @@
-package hust.thread.share;
+package hust.thread.api.share;
 
 /**
  * 共享数据：只定义一个自定义线程对象，将该对象通过构造函数的方式绑定到多个新线程上（Thread本身实现了Runnable接口），显然各线程共享该对象。

@@ -1,4 +1,4 @@
-package hust.thread.daemon;
+package hust.thread.api.daemon;
 
 /**
  * Java线程分两种，一种是用户线程，一种是守护线程。

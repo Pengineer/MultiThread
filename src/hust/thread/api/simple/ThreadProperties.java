@@ -1,4 +1,4 @@
-package hust.thread.simple;
+package hust.thread.api.simple;
 
 /**
  * 线程的基本API属性
