@@ -3,6 +3,9 @@ package hust.thread.communication.wait_notify;
 /**
  * A，B，C三个线程使用相同的对象锁，测试让A和B同时等待，然后C线程执行一次notify随机唤醒其中的一个线程。
  * 
+ * 补充：
+ * 如果notify在wait之前执行，wait线程将不会被唤醒。可以通过设置一个全局变量来控制wait线程中wait()方法的执行。
+ * 
  * @author 2016-01-07
  *
  */

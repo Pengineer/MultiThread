@@ -17,7 +17,7 @@ public class WaitLong {
 				try {
 					synchronized(lock) {
 						System.out.println("start...." + System.currentTimeMillis());
-						lock.wait(3000);
+						lock.wait(3000); //3秒后自动被唤醒，继续执行
 						System.out.println("end......" + System.currentTimeMillis());
 					}
 				} catch (InterruptedException e) {
