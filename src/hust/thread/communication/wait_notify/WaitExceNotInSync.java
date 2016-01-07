@@ -8,9 +8,14 @@ package hust.thread.communication.wait_notify;
  */
 public class WaitExceNotInSync {
 
-	public static void main(String[] args) throws InterruptedException {
-		String str = new String("1234");
-		str.wait();
+	public static void main(String[] args) { 
+		try {
+			String str = new String("1234");
+			str.wait();
+		} catch (InterruptedException e) {//当处于wait状态的线程遇到interrupt方法时，会抛出InterruptedException异常
+			e.printStackTrace();
+		}
+		
 	}
 
 }
