@@ -33,7 +33,7 @@ public class OnePOneC {
 				try {
 					synchronized(lock) {
 						if(!OnePOneC.value.equals("")) {
-							lock.wait();// 如果已经生产了一个，这等待消费者消费
+							lock.wait();// 如果已经生产了一个，则等待消费者消费
 						}
 						OnePOneC.value = System.currentTimeMillis() + "_" + System.nanoTime();
 						System.out.println("produce " + OnePOneC.value);
