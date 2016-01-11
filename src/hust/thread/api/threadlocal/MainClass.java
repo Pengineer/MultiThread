@@ -5,6 +5,8 @@ package hust.thread.api.threadlocal;
  * JDK中提供的类ThreadLocal正是为了解决这个问题。
  * 	类ThreadLocal主要解决的就是变量在不同线程间的隔离性，不同的线程中的值是可以统一放入ThreadLocal类中进行保存。
  * 
+ * 关于线程变量的隔离，JavaSE还提供了一个类InheritableThreadLocal，该类可以在子线程中取得父线程中的变量，也可以设置子线程自己的隔离变量。
+ * 
  * @author 2016-01-11
  *
  */
