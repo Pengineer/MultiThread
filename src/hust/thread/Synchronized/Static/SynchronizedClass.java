@@ -12,15 +12,23 @@ package hust.thread.Synchronized.Static;
  * 可以在同步代码块中使用Class锁，synchronized(Service.class)，一定注意了，这是类锁，和静态方法共用一个锁；非静态方法上的是对象锁，它们
  * 共用一把锁。
  * 
+ * 对于Class锁，所有的对象使用的同一把；
+ * 对于对象锁，仅针对本实例对象。
+ * 
  * @author 2016-01-06
  *
  */
 public class SynchronizedClass {
 	public static void main(String[] args) {
 		Service service = new Service();
-		MyThreadA tA = new MyThreadA(service);
-		MyThreadB tB = new MyThreadB(service);
-		tA.start();
-		tB.start();
+//		MyThreadA tA = new MyThreadA(service);
+//		MyThreadB tB = new MyThreadB(service);
+//		tA.start();
+//		tB.start();
+
+		MyThreadC tC1 = new MyThreadC();
+		MyThreadC tC2 = new MyThreadC();
+		tC1.start();
+		tC2.start();
 	}
 }
