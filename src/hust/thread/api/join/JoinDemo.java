@@ -20,7 +20,13 @@ package hust.thread.api.join;
  * 
  * 答案：wait()的作用是让“当前线程”等待，而这里的“当前线程”是指当前在CPU上运行的线程。所以，虽然是调用子线程的wait()方法，但是它是通过
  * “主线程”去调用的；所以，休眠的是主线程，而不是“子线程”！
-	
+ * 
+ * B线程join到A线程后，如果A线程被发生interrupt，则A线程会抛出InterruptException异常，但是不会影响到B线程。
+ * 
+ * join(long)与sleep(long)的区别：
+ * 前者底层是用wait实现的，因此在join(long)执行后会释放锁。执行sleep(long)不对释放当前线程所持有的锁。
+ * 另外join方法本身也是加锁同步的。
+ * 	
  * 
  * @author 2016-01-09
  *
