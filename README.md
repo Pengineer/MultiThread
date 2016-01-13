@@ -24,5 +24,8 @@
 > * 公平锁与非公平锁
 > * ReentrantReadWriteLock类
 
-
+6，Java对线程技术中对异常的处理</br>
+> * Thread.UncaughtExceptionHandler类的使用
+> * 自定义单线程的异常处理
+> * 自定义线程组的异常处理
 
