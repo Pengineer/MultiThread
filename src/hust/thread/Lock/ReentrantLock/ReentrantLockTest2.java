@@ -14,13 +14,13 @@ public class ReentrantLockTest2 {
 	public static void main(String[] args) {
 		Service service = new Service();
 		MyThreadA tA1 = new MyThreadA(service);
-		MyThreadA tA2 = new MyThreadA(service);
+//		MyThreadA tA2 = new MyThreadA(service);
 		MyThreadB tB1 = new MyThreadB(service);
-		MyThreadB tB2 = new MyThreadB(service);
+//		MyThreadB tB2 = new MyThreadB(service);
 		tA1.start();
-		tA2.start();
+//		tA2.start();
 		tB1.start();
-		tB2.start();
+//		tB2.start();
 	}
 	
 	static class Service {
@@ -32,6 +32,7 @@ public class ReentrantLockTest2 {
 				System.out.println(Thread.currentThread().getName() + " start method1...");
 				Thread.sleep(2000);
 				System.out.println(Thread.currentThread().getName() + "   end method1...");
+				while(true){}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} finally {
@@ -50,6 +51,7 @@ public class ReentrantLockTest2 {
 			} finally {
 				lock.unlock();
 			}
+			System.out.println(".....");/////
 		}
 	}
 	

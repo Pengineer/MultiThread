@@ -7,6 +7,11 @@ package hust.thread.api.threadlocal;
  * 
  * 关于线程变量的隔离，JavaSE还提供了一个类InheritableThreadLocal，该类可以在子线程中取得父线程中的变量，也可以设置子线程自己的隔离变量。
  * 
+ * ThreadLocal类的作用是为每个线程都创建一个变量副本, 每个线程都可以修改自己所拥有的变量副本, 而不会影响其他线程的副本. 其实这也是解决线程安全
+ * 的问题的一种方法.
+ * 
+ * ThreadLocal是如何做到为每一个线程维护变量的副本的呢？其实实现的思路很简单：在ThreadLocal类中有一个Map，用于存储每一个线程的变量副本。
+ * 
  * @author 2016-01-11
  *
  */
